@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::get('mensaje', function () {
+    return "Holi";
+});
 Route::post('register', [RegisterController::class, 'store'])->name('api.register');
 
 // Rutas para crear nuevas Categorias de post
